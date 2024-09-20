@@ -3,6 +3,7 @@ function diffWaysToCompute(expression: string): number[] {
   const groups = findGroups(expression);
   const maxGroupSize = Math.max(...groups.map((g) => g.size));
 
+  for (let groupSize = maxGroupSize - 1; groupSize > 1; groupSize--) {}
   return [0];
 }
 
